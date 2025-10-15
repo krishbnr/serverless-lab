@@ -3,7 +3,7 @@
 ## Lab Overview And High Level Design
 
 Let's start with the High Level Design.
-![High Level Design](./images/high-level-design.jpg)
+![High Level Design](./high-level-design.jpg)
 An Amazon API Gateway is a collection of resources and methods. For this tutorial, you create one resource (DynamoDBManager) and define one method (POST) on it. The method is backed by a Lambda function (LambdaFunctionOverHttps). That is, when you call the API through an HTTPS endpoint, Amazon API Gateway invokes the Lambda function.
 
 The POST method on the DynamoDBManager resource supports the following DynamoDB operations:
@@ -299,5 +299,6 @@ To delete the table, from DynamoDB console, select the table "lambda-apigateway"
 To delete the Lambda, from the Lambda console, select lambda "LambdaFunctionOverHttps", click "Actions", then click Delete 
 
 To delete the API we created, in API gateway console, under APIs, select "DynamoDBOperations" API, click "Delete"
+
 
 
